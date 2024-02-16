@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Real Time Image Identification App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/ml5@0.7.0/dist/ml5.min.js"></script>
+    
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+          <h3>case study between google lens and mobilenet</h3>
+            <h3 class="btn btn-info heading">google lens VS mobilenet</h3>
+            <hr>
+        </center>
+        <div class="co-lg-6 col-md6 col-sm-6 col-xs-12"></div>
+        <br>
+        <center>
+          <h3 class="btn btn-success">
+        <p class="btn btn-info result_para_tag">Object : 
+            <span id="result_object_name"></span> 
+          </p>
+          
+          <br><br>
+          <p class="btn btn-info result_para_tag">Accuracy : 
+            <span id="result_object_accuracy"></span> 
+          </p>
+        </h3>
+        <ol>
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-6 col-xs-12">
+              <b>test Image - </b>
+              <img src="controlller.jpg" class="pic">
+            </li>
+            <h5 class="col-sm-6 col-xs-12">
+              output on <b>GOOGLE LENS</b>
+              <span></span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>result - </h4>
+              <hr>
+              <h4></h4>
+            </div>
+          </div>
+        </ol>
+        <ol>
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-6 col-xs-12">
+              <b>test Image - </b>
+              <img src="plant.jpg" class="pic">
+            </li>
+            <h5 class="col-sm-6 col-xs-12">
+              output on <b>GOOGLE LENS</b>
+              <span></span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>result - </h4>
+              <hr>
+              <h4></h4>
+            </div>
+          </div>
+        </ol>
+        <ol>
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-6 col-xs-12">
+              <b>test Image - </b>
+              <img src="teddy.jpg" class="pic">
+            </li>
+            <h5 class="col-sm-6 col-xs-12">
+              output on <b>GOOGLE LENS</b>
+              <span></span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>result - </h4>
+              <hr>
+              <h4></h4>
+            </div>
+          </div>
+        </ol>
+        <ol>
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-6 col-xs-12">
+              <b>test Image - </b>
+              <img src="sword.jpg" class="pic">
+            </li>
+            <h5 class="col-sm-6 col-xs-12">
+              output on <b>GOOGLE LENS</b>
+              <span></span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>result - </h4>
+              <hr>
+              <h4></h4>
+            </div>
+          </div>
+        </ol>
+        <ol>
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-6 col-xs-12">
+              <b>test Image - </b>
+              <img src="lantern.jpg" class="pic">
+            </li>
+            <h5 class="col-sm-6 col-xs-12">
+              output on <b>GOOGLE LENS</b>
+              <span></span>
+            </h5>
+            <div class="mini_result" class="col-xs-12">
+              <h4>result - </h4>
+              <hr>
+              <h4></h4>
+            </div>
+          </div>
+        </ol>
+        
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

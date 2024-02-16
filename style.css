@@ -1,0 +1,13 @@
+.heading{
+    color: brown;
+}
+.result_para_tag{
+    box-shadow: 5px 5px 5px gold;
+}
+.pic{
+    width: 300px;
+    height: 300px;
+}
+.test_image_and_result{
+    background-color:green ;
+}
